@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// API Routes
+Route::post('/api/users/try_create', 'UsersController@tryCreate');
